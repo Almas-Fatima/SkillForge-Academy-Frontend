@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact SkillForge Academy for enrollment support, guidance, and class details.">
+    <title>Contact - SkillForge Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="site-shell">
+    <header class="site-header">
+        <a class="brand" href="index.html">SkillForge</a>
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+        <label class="menu-button" for="nav-toggle" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main-nav" aria-label="Primary navigation">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="courses.html">Courses</a>
+            <a class="nav-link is-active" href="contact.html">Contact</a>
+        </nav>
+        <section class="header-actions" aria-label="Quick actions">
+            <a class="button button-ghost" href="courses.html">Browse Courses</a>
+            <a class="button button-primary" href="#contact-form">Apply Now</a>
+        </section>
+        <label class="nav-overlay" for="nav-toggle" aria-hidden="true"></label>
+    </header>
+
+    <main>
+        <section class="page-hero compact-hero">
+            <article class="hero-copy">
+                <p class="eyebrow">Contact and enrollment</p>
+                <h1>Let's plan the <em class="accent-word">right path</em> for you.</h1>
+                <p>
+                    Reach out for course advice, schedule details, enrollment help, or guidance on which
+                    learning track fits your current level.
+                </p>
+            </article>
+
+            <section class="contact-summary" aria-label="Contact summary">
+                <article class="mini-card">
+                    <p>Email</p>
+                    <strong>skillforgeacademy@gmail.com</strong>
+                </article>
+                <article class="mini-card is-purple">
+                    <p>Phone</p>
+                    <strong>+92 302 8827704</strong>
+                </article>
+                <article class="mini-card is-yellow">
+                    <p>Support hours</p>
+                    <strong>Mon - Fri, 9am - 5pm</strong>
+                </article>
+            </section>
+        </section>
+
+        <section class="contact-layout">
+            <article class="form-panel">
+                <header class="section-header section-header-tight">
+                    <article>
+                        <p class="eyebrow">Send a message</p>
+                        <h2>We'll help you get started</h2>
+                    </article>
+                </header>
+
+                <form id="contact-form" action="#" method="post">
+                    <section class="form-group">
+                        <label for="user_name">Name</label>
+                        <input type="text" id="user_name" name="name" placeholder="Enter your name" required>
+                    </section>
+
+                    <section class="form-group">
+                        <label for="user_email">Email</label>
+                        <input type="email" id="user_email" name="email" placeholder="Enter your email" required>
+                    </section>
+
+                    <section class="form-group">
+                        <label for="course">Select course</label>
+                        <select id="course" name="courses" required>
+                            <option value="">Choose a course</option>
+                            <option value="full_stack">Full Stack Web Development</option>
+                            <option value="python">Python Programming</option>
+                            <option value="web_app">Web App Development</option>
+                            <option value="git">Git and GitHub</option>
+                        </select>
+                    </section>
+
+                    <section class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell us what you want to learn..." required></textarea>
+                    </section>
+
+                    <button class="button button-primary" type="submit">Submit inquiry</button>
+                </form>
+            </article>
+
+            <aside class="contact-side">
+                <article class="info-card is-highlight">
+                    <p class="info-tag">Visit us</p>
+                    <h3>Lahore, Punjab, Pakistan</h3>
+                    <p>Meet the team, ask questions, and get help choosing the best route for your goals.</p>
+                </article>
+
+                <figure class="map-panel">
+                    <img class="location-map" src="map.png" width="575" height="315" alt="SkillForge Academy location map" loading="lazy" decoding="async">
+                    <figcaption>Visit SkillForge Academy in Lahore for enrollment support and student guidance.</figcaption>
+                </figure>
+
+                <address class="contact-info">
+                    SkillForge Academy<br>
+                    Lahore, Punjab, Pakistan<br>
+                    Email: skillforgeacademy@gmail.com<br>
+                    Phone: +92 302 8827704
+                </address>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <time>2026</time> SkillForge Academy. Learn with clarity and momentum.</p>
+        <address>skillforgeacademy@gmail.com</address>
+    </footer>
+</body>
+</html>
